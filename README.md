@@ -1,19 +1,21 @@
-Настройка Google Cloud Functions 
+<b>Настройка Google Cloud Functions</b>
 
-1) Необходимо подключить биллинг к аккаунту (если его нет)
-2) Добавить в аккаунт Cloud Functions (то что необходимо он у вас попросит установить)
-3) Нужно так же установить Computer Engine (он нам создаст сервисный аккаунт)
+1) Необходимо подключить биллинг к аккаунту <i>(если его нет)</i>
+2) Добавить в аккаунт Cloud Functions <i>(то что необходимо он у вас попросит установить)</i>
+3) Нужно так же установить Computer Engine <i>(он нам создаст сервисный аккаунт)</i>
 4) Нужно получить ключ авторизаций
-- Заходите в раздел IAM & Admin -> Service Accounts
-- Находите аккаунт с именем Default compute service account
-- Заходите в раздел KEYS
-- Добавляете ключ с типом JSON
-- и получаете файл он нам нужен будет что бы настроить WF и плагин
+   - Заходите в раздел IAM & Admin -> Service Accounts
+   - Находите аккаунт с именем Default compute service account
+   - Заходите в раздел KEYS
+   - Добавляете ключ с типом JSON
+   - и получаете файл он нам нужен будет что бы настроить WF и плагин
 
-Создание функций
-1) Необходимо создать 2 функций run_create и submit_tool_outputs_to_run (нужно именно так и назвать)
+<b>Создание функций</b>
+1) Необходимо создать 2 функций (нужно именно так и назвать)
+   - run_create
+   - submit_tool_outputs_to_run
 
-[b]Характеристики run_create[/b]
+<b>Характеристики run_create</b>
 - Region: us-central1
 - Memory allocated: 1 GiB
 - CPU: 1
@@ -22,7 +24,7 @@
 - Maximum instances: 10
 - Concurrency: 20
 
-[b]Характеристики  submit_tool_outputs_to_run[/b]
+<b>Характеристики  submit_tool_outputs_to_run</b>
 - Region: us-central1
 - Memory allocated: 256 MiB
 - CPU: 167 millis
