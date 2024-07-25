@@ -13,20 +13,20 @@
 Создание функций
 1) Необходимо создать 2 функций run_create и submit_tool_outputs_to_run (нужно именно так и назвать)
 
-Характеристики run_create
-Region: us-central1
-Memory allocated: 1 GiB
-CPU: 1
-Timeout: 120 seconds
-Minimum instances: 1
-Maximum instances: 10
-Concurrency: 20
+[b]Характеристики run_create[/b]
+- Region: us-central1
+- Memory allocated: 1 GiB
+- CPU: 1
+- Timeout: 120 seconds
+- Minimum instances: 1
+- Maximum instances: 10
+- Concurrency: 20
 
-Характеристики  submit_tool_outputs_to_run
-Region: us-central1
-Memory allocated: 256 MiB
-CPU: 167 millis
-Timeout: 120 seconds
-Minimum instances: 0
-Maximum instances: 100
-Concurrency: 1
+[b]Характеристики  submit_tool_outputs_to_run[/b]
+- Region: us-central1
+- Memory allocated: 256 MiB
+- CPU: 167 millis
+- Timeout: 120 seconds
+- Minimum instances: 0
+- Maximum instances: 100
+- Concurrency: 1
