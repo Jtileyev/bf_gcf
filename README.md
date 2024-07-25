@@ -36,3 +36,12 @@
 <b>Настройка плагина Google Cloud JWT Token Create</b>
 - Нужно скопировать плагин с других аккаунтов если у вас его нет в вашем аккаунте
 - Если есть в вашем аккаунте копия плагина вам так же нужно сделать копию для своего проекта и поменять там ключи в переменной "privateKey" который вы скачали из Google Cloud
+
+<b>Настройка БД</b>
+- Найти сущность system settings
+- И очистить поля которые ниже
+- systemGoogleDateExpiration
+- systemGoogleIDToken
+- И поменять ссылки в этих полях под своих из Google Cloud Functions 
+- systemGoogleTargetAudienceURL
+- systemGoogleTargetAudienceURL_dev (можно в целом оставить пустым)
